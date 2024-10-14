@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Tarot</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        nav a:hover {
+            background-color: #4b0082;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .intro img {
+            width: 150px;
+        }
+        .cards-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Descubre el Tarot</h1>
+    </header>
+
+    <nav>
+        <a href="#cartas">Cartas</a>
+        <a href="#lecturas">Lecturas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Bienvenido al mundo del Tarot</h2>
+            <p>Descubre los misterios y sabiduría que esconden las cartas del tarot. Cada carta tiene una historia que contar, un mensaje que revelar.</p>
+            <img src="https://example.com/tarot_image.jpg" alt="Cartas de tarot">
+        </section>
+
+        <section id="cartas" class="cards-section">
+            <div class="card">
+                <img src="https://example.com/tarot_card.jpg" alt="El Loco">
+                <h3>El Loco</h3>
+                <p>El inicio de una nueva aventura, el espíritu libre que sigue sus instintos.</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/tarot_card2.jpg" alt="La Muerte">
+                <h3>La Muerte</h3>
+                <p>Transformación y renacimiento, el fin de una etapa para dar paso a otra.</p>
+            </div>
+            <!-- Agrega más cartas aquí -->
+        </section>
+
+        <section id="lecturas" class="intro">
+            <h2>Solicita una Lectura</h2>
+            <p>¿Quieres una lectura personalizada? Completa el siguiente formulario:</p>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="mensaje">¿Cuál es tu pregunta?</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Solicitar Lectura">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tarot Místico. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
